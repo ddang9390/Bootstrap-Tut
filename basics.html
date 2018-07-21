@@ -22,18 +22,26 @@
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false"> <!-- hamburger menu -->
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
 					<a href="#" class="navbar-brand">Brand</a>
 				</div>
 				
-				<ul class="nav navbar-nav"> <!-- left side of navbar -->
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-				
-				<ul class="nav navbar-nav navbar-right"> <!-- right side of navbar -->
-					<li><a href="#">Sign Up</a></li>
-					<li><a href="#">Login</a></li>
-				</ul>
+				<div class="collapse navbar-collapse" id="bs-nav-demo"> <!-- hides elements when screen is smaller -->
+					<ul class="nav navbar-nav"> <!-- left side of navbar -->
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right"> <!-- right side of navbar -->
+						<li><a href="#">Sign Up</a></li>
+						<li><a href="#">Login</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	
