@@ -16,6 +16,13 @@
 				color: white;
 				text-align: center;
 			}
+			
+			.red{
+				background: red;
+				border: 2px dashed black;
+				text-align: center;
+				height: 6.0rem;
+			}
 		</style>
 		
 	</head>
@@ -116,6 +123,7 @@
 
 		<a href="http://www.getbootstrap.com" class="btn btn-info btn-lg">Bootstrap Docs</a>
 		
+		<!-- stuff inside container -->
 		<div class="container">
 			<!-- simple jumbotron example -->
 			<div class="jumbotron">
@@ -125,7 +133,6 @@
 				<button class="btn btn-success btn-lg">Button</button>
 			</div>
 			
-			<!-- stuff inside container -->
 			<h1>Bootstrap Basics</h1>
 			<button class="btn btn-danger btn-xs">CLICK ME!</button>
 			<button class="btn btn-success btn-xs active">CLICK ME!</button>
@@ -159,30 +166,60 @@
 		</div>
 		<br><br><br>
 		
-		<!-- simple grid system example -->
+		<!-- simple grid system examples -->
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2 blue">COLUMN LARGE 2</div>
-				<div class="col-lg-8 blue">COLUMN LARGE 8</div>
-				<div class="col-lg-2 blue">COLUMN LARGE 2</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 blue">COLUMN LARGE 3</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 blue">COLUMN LARGE 3</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 blue">COLUMN LARGE 3</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 blue">COLUMN LARGE 3</div>
 			</div>
 		</div>
+		<br><br>
+		
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
-				<div class="col-lg-1 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+				<div class="col-lg-1 col-md-2 blue">COLUMN LARGE 1</div>
+			</div>
+		</div>
+		<br><br>
+		
+		<!-- nested grids example -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 blue">
+					<div class="row">
+						<div class="col-lg-6 red">HALF</div>
+						<div class="col-lg-6 red">HALF</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 blue">COLUMN LARGE 3</div>
+				<div class="col-md-3 col-sm-6 blue">COLUMN LARGE 3</div>
+				<div class="col-md-3 col-sm-6 blue">
+					<div class="row">
+						<div class="col-lg-2 red"></div>
+						<div class="col-lg-2 red"></div>
+						<div class="col-lg-2 red"></div>
+						<div class="col-lg-2 red"></div>
+						<div class="col-lg-2 red"></div>
+						<div class="col-lg-2 red"></div>
+					</div> 
+				</div>
 			</div>
 		</div>
 		<br><br><br>
+		
+		
 	</body>
 </html>
